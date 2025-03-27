@@ -1,78 +1,156 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
     margin: 20px;
     padding: 20px;
-}
-
-/* Title styling */
-.title {
-    color: #2c3e50;
+    color: #333;
     text-align: center;
 }
 
-/* Ordered list styling */
-ol {
-    background: gray;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Image styling */
-.styled-image {
-    display: block;
-    margin: 10px auto;
-    border: 5px solid #3498db;
-    border-radius: 10px;
-}
-
-/* Table styling */
-.contact-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-}
-
-.contact-table th, .contact-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-.contact-table th {
-    background-color: #3498db;
+/* Header Styling */
+header {
+    background-color: #34495e;
     color: white;
+    padding: 15px 0;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-/* Registration form styling */
-.registration-form {
+/* Section Styling */
+section {
     background: white;
     padding: 20px;
+    margin: 20px auto;
+    width: 80%;
     border-radius: 10px;
-    width: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ordered List Styling */
+ol {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    list-style-position: inside;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #3498db;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #2980b9;
+    color: white;
+    font-size: 16px;
+}
+
+table tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+table tr:hover {
+    background-color: #d0e6f6;
+}
+
+/* Registration Form Styling */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 60%;
     margin: auto;
-    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.registration-form label {
+form label {
     font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
 }
 
-.registration-form input, 
-.registration-form select {
+form input, form select {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.registration-form input[type="submit"] {
-    background-color: #2ecc71;
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+form input[type="submit"], 
+form input[type="reset"] {
+    background-color: #27ae60;
     color: white;
     border: none;
     cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 15px;
+    display: inline-block;
+    width: 48%;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
-.registration-form input[type="submit"]:hover {
-    background-color: #27ae60;
+form input[type="submit"]:hover {
+    background-color: #218c53;
 }
+
+form input[type="reset"] {
+    background-color: #e74c3c;
+}
+
+form input[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
+/* Multimedia Section */
+audio, video {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    section, form {
+        width: 95%;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+
